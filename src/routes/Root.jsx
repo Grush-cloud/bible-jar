@@ -18,12 +18,12 @@ function Logo({ color }) {
 
 export default function Root() {
   const emotions = [
-    { name: "thankful", label: "Thankful", color: "red" },
-    { name: "happy", label: "Happy", color: "green" },
-    { name: "angry", label: "Angry", color: "blue" },
+    { name: "thankful", label: "Thankful", color: "pink" },
+    { name: "happy", label: "Happy", color: "yellow" },
+    { name: "angry", label: "Angry", color: "red" },
     { name: "anxious", label: "Anxious", color: "orange" },
-    { name: "lonely", label: "Lonely", color: "purple" },
-    { name: "sad", label: "Sad", color: "pink" },
+    { name: "lonely", label: "Lonely", color: "grey" },
+    { name: "sad", label: "Sad", color: "blue" },
   ];
 
   return (

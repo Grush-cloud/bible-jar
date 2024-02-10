@@ -10,6 +10,7 @@ import {
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Emotion from "./routes/Emotion";
 import Root from "./routes/Root";
+import Heart from "./components/Heart";
 
 function App() {
   const [thankful, setThankful] = useState([]);
@@ -100,24 +101,26 @@ function App() {
     return <div className="loader">Loading...</div>;
   }
   return (
-    <Router>
-      <Routes>
-        <Route path="/bible-jar" element={<Root />} />
-        <Route
-          path="/display/:emotion"
-          element={
-            <Emotion
-              happy={happy}
-              anxious={anxious}
-              angry={angry}
-              lonely={lonely}
-              thankful={thankful}
-              sad={sad}
-            />
-          }
-        />
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/bible-jar" element={<Root />} />
+          <Route
+            path="/display/:emotion"
+            element={
+              <Emotion
+                happy={happy}
+                anxious={anxious}
+                angry={angry}
+                lonely={lonely}
+                thankful={thankful}
+                sad={sad}
+              />
+            }
+          />
+        </Routes>
+      </Router>
+    </>
   );
 }
 

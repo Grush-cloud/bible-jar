@@ -1,45 +1,24 @@
 body {
-  background-color: pink;
   font-family: "Protest Riot", sans-serif;
   background: linear-gradient(131deg, #ce05ff, #ff04a1, #1424e6);
   background-size: 600% 600%;
 
-  -webkit-animation: AnimationName 0s ease infinite;
-  -moz-animation: AnimationName 0s ease infinite;
-  animation: AnimationName 0s ease infinite;
+  background: linear-gradient(110deg, #ff0000, #f70bb8, #0b1df7);
+  background-size: 180% 180%;
+  animation: gradient-animation 9s ease infinite;
+
+  /* Background image */
 }
 
-@-webkit-keyframes AnimationName {
+@keyframes gradient-animation {
   0% {
-    background-position: 93% 0%;
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 0% 100%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 93% 0%;
-  }
-}
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 93% 0%;
-  }
-  50% {
-    background-position: 0% 100%;
-  }
-  100% {
-    background-position: 93% 0%;
-  }
-}
-@keyframes AnimationName {
-  0% {
-    background-position: 93% 0%;
-  }
-  50% {
-    background-position: 0% 100%;
-  }
-  100% {
-    background-position: 93% 0%;
+    background-position: 0% 50%;
   }
 }
 .wrapper {
@@ -77,6 +56,35 @@ h1 {
   margin-bottom: 40px;
   font-size: 50px;
   color: white;
+  animation: stroke 6s infinite alternate;
+  stroke-width: 2;
+  stroke: white;
+}
+
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+  }
+  80% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-width: 3;
+  }
+  100% {
+    fill: rgba(72, 138, 204, 1);
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
 }
 
 .bible-logo {
