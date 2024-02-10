@@ -10,7 +10,6 @@ import {
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Emotion from "./routes/Emotion";
 import Root from "./routes/Root";
-import Heart from "./components/Heart";
 
 function App() {
   const [thankful, setThankful] = useState([]);
