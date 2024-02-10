@@ -1,0 +1,108 @@
+body {
+  background-color: pink;
+  font-family: "Protest Riot", sans-serif;
+  background: linear-gradient(131deg, #ce05ff, #ff04a1, #1424e6);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 0s ease infinite;
+  -moz-animation: AnimationName 0s ease infinite;
+  animation: AnimationName 0s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 93% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 93% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 93% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 93% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 93% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 93% 0%;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  height: 100vh;
+}
+
+.emotion-contents {
+  display: flex;
+  max-width: 50%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.emotion-wrapper {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.emotion {
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 50px;
+  color: white;
+}
+
+.bible-logo {
+  width: 40px; /* Set the width of the SVG */
+  height: 40px; /* Set the height of the SVG */
+  /* Change the color of the SVG */
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  height: 100vh; /* Full viewport height */
+}
+
+.message-container {
+  text-align: center; /* Center the text horizontally */
+  font-size: 30px;
+}
+
+.emotion-verse {
+  color: white;
+}
+
+.back-button {
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
